@@ -1,23 +1,10 @@
 package com.edvo.edvo_lms.service;
 
 import com.edvo.edvo_lms.model.User;
-import com.edvo.edvo_lms.repository.UserRepository;
-import org.springframework.stereotype.Service;
-import java.util.List;
+import com.edvo.edvo_lms.dto.UserRegistrationDto;
 
-@Service
-public class UserService {
-    private final UserRepository userRepository;
 
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-
-    public List<User> getAllUsers() {
-        return userRepository.findAll();
-    }
-
-    public User saveUser(User user) {
-        return userRepository.save(user);
-    }
+public interface UserService {
+    void registerUser(UserRegistrationDto dto);
+    User findByUsername(String username);
 }
