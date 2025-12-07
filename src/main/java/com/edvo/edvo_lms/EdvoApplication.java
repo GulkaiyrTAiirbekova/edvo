@@ -1,4 +1,4 @@
-package com.edvo;
+package com.edvo.edvo_lms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EdvoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EdvoApplication.class, args);
+
+        SpringApplication.run(EdvoApplication.class, args);
 	}
 
 }
